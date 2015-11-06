@@ -47,7 +47,7 @@ class EmailAuthenticationForm(AuthenticationForm):
                 raise forms.ValidationError(self.message_incorrect_password)
             if not self.user_cache.is_active:
                 raise forms.ValidationError(self.message_inactive)
-        #check_for_test_cookie was removed in django 1.7
+        # check_for_test_cookie was removed in django 1.7
         if hasattr(self, 'check_for_test_cookie'):
             self.check_for_test_cookie()
         return self.cleaned_data
@@ -79,7 +79,9 @@ class EmailAdminAuthenticationForm(AdminAuthenticationForm):
                 raise forms.ValidationError(self.message_inactive)
             if not self.user_cache.is_staff:
                 raise forms.ValidationError(self.message_restricted)
-        self.check_for_test_cookie()
+        # check_for_test_cookie was removed in django 1.7
+        if hasattr(self, 'check_for_test_cookie'):
+            self.check_for_test_cookie()
         return self.cleaned_data
 
 
