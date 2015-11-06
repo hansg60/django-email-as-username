@@ -40,10 +40,13 @@ def get_package_data(root):
 
 
 setup(
-    name='django-email-as-username',
+    name='py2-py3-django-email-as-username',
     version=version,
     description='User authentication with email addresses instead of usernames.',
     author='Tom Christie',
+    author_email='',
+    maintainer='Harmo',
+    maintainer_email='dtharmo@gmail.com',
     url='https://github.com/harmo/django-email-as-username',
     packages=get_packages('emailusernames'),
     package_data=get_package_data('emailusernames'),
