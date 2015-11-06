@@ -218,6 +218,12 @@ tests you'll need to find a way to explicitly disable them.
 Changelog
 =========
 
+1.7.1
+-----
+* Fix check_for_test_cookie call for django > 1.6
+* Fix field order on EmailAuthenticationForm
+
+
 1.7.0
 -----
 
