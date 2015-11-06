@@ -397,6 +397,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [django-email-login]: https://bitbucket.org/tino/django-email-login
 [django-email-usernames]: https://bitbucket.org/hakanw/django-email-usernames
 [django-user-accounts]: https://github.com/pinax/django-user-accounts/
-[travis]: http://travis-ci.org/tomchristie/django-email-as-username?branch=master
-[build-status-image]: https://secure.travis-ci.org/dabapps/django-email-as-username.png
+[travis]: http://travis-ci.org/harmo/django-email-as-username?branch=master
+[build-status-image]: https://travis-ci.org/harmo/django-email-as-username.svg
 [docs]: https://docs.djangoproject.com/en/dev/topics/auth/customizing/#auth-custom-user
