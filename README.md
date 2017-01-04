@@ -38,7 +38,7 @@ Installation
 
 Install from PyPI:
 
-    pip install django-email-as-username
+    pip install py2-py3-django-email-as-username
 
 Add `emailusernames` to `INSTALLED_APPS`.
 Make sure to include it further down the list than `django.contrib.auth`.
