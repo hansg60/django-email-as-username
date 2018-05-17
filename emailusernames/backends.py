@@ -8,7 +8,7 @@ class EmailAuthBackend(ModelBackend):
 
     """Allow users to log in with their email address"""
 
-    def authenticate(self, email=None, password=None, **kwargs):
+    def authenticate(self, request=None, email=None, password=None, **kwargs):
         # Some authenticators expect to authenticate by 'username'
         if email is None:
             email = kwargs.get('username')
