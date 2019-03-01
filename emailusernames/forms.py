@@ -121,7 +121,7 @@ class EmailUserChangeForm(UserChangeForm):
 
     class Meta:
         model = User
-        if VERSION[1] > 7:
+        if VERSION[1] > 7 or VERSION[0] > 1:
             fields = '__all__'
 
     def __init__(self, *args, **kwargs):
