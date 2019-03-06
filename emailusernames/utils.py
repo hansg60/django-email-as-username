@@ -17,7 +17,7 @@ def _email_to_username(email):
     email = email.lower()
     # Deal with internationalized email addresses
     converted = email.encode('utf8', 'ignore')
-    return base64.urlsafe_b64encode(hashlib.sha256(converted).digest())[:30]
+    return base64.urlsafe_b64encode(hashlib.sha256(converted).digest())[:30].decode('utf8')
 
 
 def get_user(email, queryset=None):
